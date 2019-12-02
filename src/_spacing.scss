@@ -1,13 +1,13 @@
 // --------------------------------------------------
 // margin & padding
 // --------------------------------------------------
-@import './variables';
+
 // .m-10 -> margin: 10px;
 // .p--10-> padding: -10px;
 @each $typeKey, $typeVal in $spacing-types {
   @each $sizeKey, $sizeVal in $spacing-sizes {
     .#{$typeKey}-#{$sizeKey}{
-      #{$typeVal}:$sizeVal + px;
+      #{$typeVal}:$sizeVal;
     }
   }
 }
@@ -17,7 +17,7 @@
   @each $sizeKey, $sizeVal in $spacing-sizes {
     @each $directionKey, $directionVal in $spacing-direction {
       .#{$typeKey}#{$directionKey}-#{$sizeKey}{
-        #{$typeVal}-#{$directionVal}:$sizeVal + px;
+        #{$typeVal}-#{$directionVal}:$sizeVal;
       }
    }
   }
@@ -28,12 +28,12 @@
 @each $typeKey, $typeVal in $spacing-types {
   @each $sizeKey, $sizeVal in $spacing-sizes {
       .#{$typeKey}x-#{$sizeKey}{
-        #{$typeVal}-left:$sizeVal + px;
-        #{$typeVal}-right:$sizeVal + px;
+        #{$typeVal}-left:$sizeVal;
+        #{$typeVal}-right:$sizeVal;
       }
       .#{$typeKey}y-#{$sizeKey}{
-        #{$typeVal}-top:$sizeVal + px;
-        #{$typeVal}-bottom:$sizeVal + px;
+        #{$typeVal}-top:$sizeVal;
+        #{$typeVal}-bottom:$sizeVal;
       }
   }
 }

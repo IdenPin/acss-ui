@@ -1,12 +1,8 @@
 // ----------------------------------------------
 // Border
 // ----------------------------------------------
-@import './variables';
 .border-none {
   border: none;
-}
-.border-transparent {
-  border-color: transparent;
 }
 
 // border-width
@@ -28,7 +24,7 @@
 
 
 // border-color
-@each $colorListKey, $colorListVal in $colors {
+@each $colorListKey, $colorListVal in $border-color {
   .border-#{$colorListKey}{
     border-style: $colorListKey;
   }
