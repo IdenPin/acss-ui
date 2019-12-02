@@ -1,0 +1,22 @@
+// font-size
+@each $key, $val in $font-size {
+  .text-#{$key} {
+    font-size: $val;
+  }
+}
+
+// font-weight
+@each $key, $val in $font-weight {
+  .font-#{$key} {
+    font-weight: $val;
+  }
+}
+
+// line-height
+@each $key, $val in $line-height {
+  .line-#{$key} {
+    line-height: $val;
+  }
+}
+
+

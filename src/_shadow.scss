@@ -1,0 +1,5 @@
+@each $key, $val in $shadow {
+  .shadow-#{$key} {
+    box-shadow: unquote($val);
+  }
+}

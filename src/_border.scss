@@ -17,7 +17,7 @@
 
 // border-style
 @each $styleKey, $styleVal in $border-style {
-  .border-style{
+  .border-#{$styleKey}{
     border-style: $styleVal;
   }
 }
@@ -34,3 +34,4 @@
     }
   }
 }
+
