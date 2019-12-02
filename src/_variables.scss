@@ -1,111 +1,119 @@
 // --------------------------------------------------
 // Variables color
 // --------------------------------------------------
-// color black
-$black:#2d353c;
-// color gray
-$gray:#999;
-$gray-light:lighten($gray, 15%);
-$gray-lighter:lighten($gray, 25%);
-$gray-lightest:lighten($gray, 35%);
-$gray-dark:darken($gray, 15%);
-$gray-darker:darken($gray, 25%);
-$gray-darkest:darken($gray, 35%);
-
-// color brown
-$brown:#a57868;
-$brown-light:lighten($brown, 15%);
-$brown-lighter:lighten($brown, 25%);
-$brown-lightest:lighten($brown, 35%);
-$brown-dark:darken($brown, 15%);
-$brown-darker:darken($brown, 25%);
-$brown-darkest:darken($brown, 35%);
-// color red
-$red:#ff291d;
-$red-light:lighten($red, 15%);
-$red-lighter:lighten($red, 25%);
-$red-lightest:lighten($red, 35%);
-$red-dark:darken($red, 15%);
-$red-darker:darken($red, 25%);
-$red-darkest:darken($red, 35%);
-// color orange
-$orange:#ff9500;
-$orange-light:lighten($orange, 15%);
-$orange-lighter:lighten($orange, 25%);
-$orange-lightest:lighten($orange, 35%);
-$orange-dark:darken($orange, 15%);
-$orange-darker:darken($orange, 25%);
-$orange-darkest:darken($orange, 35%);
-// color yellow
-$yellow:#ffe70e;
-$yellow-light:lighten($yellow, 15%);
-$yellow-lighter:lighten($yellow, 25%);
-$yellow-lightest:lighten($yellow, 35%);
-$yellow-dark:darken($yellow, 15%);
-$yellow-darker:darken($yellow, 25%);
-$yellow-darkest:darken($yellow, 35%);
-// color green
-$green:#4cd964;
-$green-light:lighten($green, 15%);
-$green-lighter:lighten($green, 25%);
-$green-lightest:lighten($green, 35%);
-$green-dark:darken($green, 15%);
-$green-darker:darken($green, 25%);
-$green-darkest:darken($green, 35%);
-// color teal
-$teal:#18e0cd;
-$teal-light:lighten($teal, 15%);
-$teal-lighter:lighten($teal, 25%);
-$teal-lightest:lighten($teal, 35%);
-$teal-dark:darken($teal, 15%);
-$teal-darker:darken($teal, 25%);
-$teal-darkest:darken($teal, 35%);
-// color blue
-$blue:#007aff;
-$blue-light:lighten($blue, 15%);
-$blue-lighter:lighten($blue, 25%);
-$blue-lightest:lighten($blue, 35%);
-$blue-dark:darken($blue, 15%);
-$blue-darker:darken($blue, 25%);
-$blue-darkest:darken($blue, 35%);
-// color indigo
-$indigo:#5f6ec7;
-$indigo-light:lighten($indigo, 15%);
-$indigo-lighter:lighten($indigo, 25%);
-$indigo-lightest:lighten($indigo, 35%);
-$indigo-dark:darken($indigo, 15%);
-$indigo-darker:darken($indigo, 25%);
-$indigo-darkest:darken($indigo, 35%);
-// color purple
-$purple:#af2ec5;
-$purple-light:lighten($purple, 15%);
-$purple-lighter:lighten($purple, 25%);
-$purple-lightest:lighten($purple, 35%);
-$purple-dark:darken($purple, 15%);
-$purple-darker:darken($purple, 25%);
-$purple-darkest:darken($purple, 35%);
-// color pink
-$pink:#ff3069;
-$pink-light:lighten($pink, 15%);
-$pink-lighter:lighten($pink, 25%);
-$pink-lightest:lighten($pink, 35%);
-$pink-dark:darken($pink, 15%);
-$pink-darker:darken($pink, 25%);
-$pink-darkest:darken($pink, 35%);
-
-// color map
-$color-list:(
-    'gray':$gray,
-    'brown':$brown,
-    'red':$red,
-    'orange':$orange,
-    'yellow':$yellow,
-    'green':$green,
-    'teal':$teal,
-    'blue':$blue,
-    'indigo':$indigo,
-    'purple':$purple,
-    'pink':$pink
+$black: '#000';
+$white: '#fff';
+$colors: (
+  gray: (
+    100: '#f7fafc',
+    200: '#edf2f7',
+    300: '#e2e8f0',
+    400: '#cbd5e0',
+    500: '#a0aec0',
+    600: '#718096',
+    700: '#4a5568',
+    800: '#2d3748',
+    900: '#1a202c',
+  ),
+  red: (
+    100: '#fff5f5',
+    200: '#fed7d7',
+    300: '#feb2b2',
+    400: '#fc8181',
+    500: '#f56565',
+    600: '#e53e3e',
+    700: '#c53030',
+    800: '#9b2c2c',
+    900: '#742a2a',
+  ),
+  orange: (
+    100: '#fffaf0',
+    200: '#feebc8',
+    300: '#fbd38d',
+    400: '#f6ad55',
+    500: '#ed8936',
+    600: '#dd6b20',
+    700: '#c05621',
+    800: '#9c4221',
+    900: '#7b341e',
+  ),
+  yellow: (
+    100: '#fffff0',
+    200: '#fefcbf',
+    300: '#faf089',
+    400: '#f6e05e',
+    500: '#ecc94b',
+    600: '#d69e2e',
+    700: '#b7791f',
+    800: '#975a16',
+    900: '#744210',
+  ),
+  green: (
+    100: '#f0fff4',
+    200: '#c6f6d5',
+    300: '#9ae6b4',
+    400: '#68d391',
+    500: '#48bb78',
+    600: '#38a169',
+    700: '#2f855a',
+    800: '#276749',
+    900: '#22543d',
+  ),
+  teal: (
+    100: '#e6fffa',
+    200: '#b2f5ea',
+    300: '#81e6d9',
+    400: '#4fd1c5',
+    500: '#38b2ac',
+    600: '#319795',
+    700: '#2c7a7b',
+    800: '#285e61',
+    900: '#234e52',
+  ),
+  blue: (
+    100: '#ebf8ff',
+    200: '#bee3f8',
+    300: '#90cdf4',
+    400: '#63b3ed',
+    500: '#4299e1',
+    600: '#3182ce',
+    700: '#2b6cb0',
+    800: '#2c5282',
+    900: '#2a4365',
+  ),
+  indigo: (
+    100: '#ebf4ff',
+    200: '#c3dafe',
+    300: '#a3bffa',
+    400: '#7f9cf5',
+    500: '#667eea',
+    600: '#5a67d8',
+    700: '#4c51bf',
+    800: '#434190',
+    900: '#3c366b',
+  ),
+  purple: (
+    100: '#faf5ff',
+    200: '#e9d8fd',
+    300: '#d6bcfa',
+    400: '#b794f4',
+    500: '#9f7aea',
+    600: '#805ad5',
+    700: '#6b46c1',
+    800: '#553c9a',
+    900: '#44337a',
+  ),
+  pink: (
+    100: '#fff5f7',
+    200: '#fed7e2',
+    300: '#fbb6ce',
+    400: '#f687b3',
+    500: '#ed64a6',
+    600: '#d53f8c',
+    700: '#b83280',
+    800: '#97266d',
+    900: '#702459',
+  )
 );
 
 
@@ -141,8 +149,38 @@ $spacing-direction: (
   l: left
 );
 
+// space direction 
+$direction: (
+  t:left,
+  r: right,
+  b: bottom,
+  l: left
+);
+
 // space key
 $spacing-types: (
   p: padding,
   m: margin
+);
+
+
+
+// --------------------------------------------------
+// Variables border
+// --------------------------------------------------
+// border with
+$border-color: (
+
+);
+$border-width: (
+  0: 0,
+  1: 1,
+  2: 2,
+  4: 4,
+  5: 5,
+);
+
+$border-style: (
+  solid: solid,
+  dashed: dashed
 );
