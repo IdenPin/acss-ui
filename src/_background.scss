@@ -1,0 +1,10 @@
+@each $colorListKey, $colorListVal in $background-color {
+  .bg-#{$colorListKey}{
+    background-color: $colorListKey;
+  }
+  @each $colorKey, $colorVal in $colorListVal {
+    .border-#{$colorListKey}-#{$colorKey}{
+      background-color: $colorVal;
+    }
+  }
+}
