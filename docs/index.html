@@ -9,10 +9,6 @@
   <link rel="stylesheet" href="./css/acss-helper.css">
 </head>
 <style>
-  * {
-    padding: 0;
-  }
-
   .container {
     max-width: 1170px;
     margin: 0 auto;
@@ -23,7 +19,7 @@
 
 <body>
   <div id="app">
-    <header class="border-b-1 border-b-solid border-gray-300 py-5 mb-5">
+    <header class="border-b-1 border-b-solid border-gray-200 py-5">
       <div class="container">
         <h1 class="uppercase text-3xl">atomic css helper</h1>
       </div>
@@ -31,19 +27,17 @@
     <main class="container">
       <div class="row">
         <div class="col-9">
-          <h2 class="border-b-1 border-b-solid border-gray-200 pb-5">Colors</h2>
+          <h2 class="border-b-1 border-b-solid border-gray-300 pb-4 mt-5 font-bold">Colors</h2>
           <div class="row p-b-30">
-            <div class="col-4" v-for="(color, index) in colors">
-              <div class="mt-5">
-                <div class="p-2 text-c" :class="`text-${index}-${i == 500 ? '' : 1000 - i} bg-${index}-${i}`"
-                  v-for="(item, i) in color">
-                  .bg-{{index}}-{{i}}
-                </div>
+            <div class="col-3 mt-5" v-for="(color, index) in colors" :key="index">
+              <div class="p-2 text-c text-sm" :class="`text-${index}-${i == 500 ? '' : 1000 - i} bg-${index}-${i}`"
+                v-for="(item, i) in color">
+                {{index.toLocaleUpperCase()}} {{i}}
               </div>
             </div>
           </div>
           <!-- paddings -->
-          <h2 id="paddings" class="b-b-1 p-b-20">Paddings</h2>
+          <h2 id="paddings" class="border-b-2 border-b-solid border-gray-200 py-5 font-bold">Paddings</h2>
           <div class="row p-b-30">
             <div class="col-4">
               <div class="boxes default">
@@ -83,161 +77,9 @@
                 </div>
               </div>
             </div>
-            <div class="col-4">
-              <div class="boxes default">
-                <div class="box heading">padding-top</div>
-                <div class="box">
-                  <code>.p-t-0</code>
-                </div>
-                <div class="box">
-                  <code>.p-t-5</code>
-                </div>
-                <div class="box">
-                  <code>.p-t-10</code>
-                </div>
-                <div class="box">
-                  <code>.p-t-15</code>
-                </div>
-                <div class="box">
-                  <code>.p-t-20</code>
-                </div>
-                <div class="box">
-                  <code>.p-t-25</code>
-                </div>
-                <div class="box">
-                  <code>.p-t-30</code>
-                </div>
-                <div class="box">
-                  <code>.p-t-35</code>
-                </div>
-                <div class="box">
-                  <code>.p-t-40</code>
-                </div>
-                <div class="box">
-                  <code>.p-t-45</code>
-                </div>
-                <div class="box">
-                  <code>.p-t-50</code>
-                </div>
-              </div>
-            </div>
-            <div class="col-4">
-              <div class="boxes default">
-                <div class="box heading">padding-bottom</div>
-                <div class="box">
-                  <code>.p-b-0</code>
-                </div>
-                <div class="box">
-                  <code>.p-b-5</code>
-                </div>
-                <div class="box">
-                  <code>.p-b-10</code>
-                </div>
-                <div class="box">
-                  <code>.p-b-15</code>
-                </div>
-                <div class="box">
-                  <code>.p-b-20</code>
-                </div>
-                <div class="box">
-                  <code>.p-b-25</code>
-                </div>
-                <div class="box">
-                  <code>.p-b-30</code>
-                </div>
-                <div class="box">
-                  <code>.p-b-35</code>
-                </div>
-                <div class="box">
-                  <code>.p-b-40</code>
-                </div>
-                <div class="box">
-                  <code>.p-b-45</code>
-                </div>
-                <div class="box">
-                  <code>.p-b-50</code>
-                </div>
-              </div>
-            </div>
-            <div class="col-4">
-              <div class="boxes default">
-                <div class="box heading">padding-left</div>
-                <div class="box">
-                  <code>.p-l-0</code>
-                </div>
-                <div class="box">
-                  <code>.p-l-5</code>
-                </div>
-                <div class="box">
-                  <code>.p-l-10</code>
-                </div>
-                <div class="box">
-                  <code>.p-l-15</code>
-                </div>
-                <div class="box">
-                  <code>.p-l-20</code>
-                </div>
-                <div class="box">
-                  <code>.p-l-25</code>
-                </div>
-                <div class="box">
-                  <code>.p-l-30</code>
-                </div>
-                <div class="box">
-                  <code>.p-l-35</code>
-                </div>
-                <div class="box">
-                  <code>.p-l-40</code>
-                </div>
-                <div class="box">
-                  <code>.p-l-45</code>
-                </div>
-                <div class="box">
-                  <code>.p-l-50</code>
-                </div>
-              </div>
-            </div>
-            <div class="col-4">
-              <div class="boxes default">
-                <div class="box heading">padding-right</div>
-                <div class="box">
-                  <code>.p-r-0</code>
-                </div>
-                <div class="box">
-                  <code>.p-r-5</code>
-                </div>
-                <div class="box">
-                  <code>.p-r-10</code>
-                </div>
-                <div class="box">
-                  <code>.p-r-15</code>
-                </div>
-                <div class="box">
-                  <code>.p-r-20</code>
-                </div>
-                <div class="box">
-                  <code>.p-r-25</code>
-                </div>
-                <div class="box">
-                  <code>.p-r-30</code>
-                </div>
-                <div class="box">
-                  <code>.p-r-35</code>
-                </div>
-                <div class="box">
-                  <code>.p-r-40</code>
-                </div>
-                <div class="box">
-                  <code>.p-r-45</code>
-                </div>
-                <div class="box">
-                  <code>.p-r-50</code>
-                </div>
-              </div>
-            </div>
           </div>
           <!-- margins -->
-          <h2 id="margins" class="b-b-1 p-b-20">Margins</h2>
+          <h2 id="margins" class="border-b-2 border-b-solid border-gray-200 py-5 font-bold">Margins</h2>
           <div class="row p-b-30">
             <div class="col-4">
               <div class="boxes default">
@@ -479,7 +321,7 @@
             </div>
           </div>
           <!-- font -->
-          <h2 id="font" class="b-b-1 p-b-20">Font</h2>
+          <h2 id="font" class="border-b-2 border-b-solid border-gray-200 py-5 font-bold">Font</h2>
           <div class="row p-b-30">
             <div class="col-4">
               <div class="boxes default">
@@ -565,7 +407,7 @@
             </div>
           </div>
           <!-- text -->
-          <h2 id="text" class="b-b-1 p-b-20">Text</h2>
+          <h2 id="text" class="border-b-2 border-b-solid border-gray-200 py-5 font-bold">Text</h2>
           <div class="row p-b-30">
             <div class="col-4">
               <div class="boxes default">
@@ -589,7 +431,7 @@
             </div>
           </div>
           <!-- size -->
-          <h2 id="size" class="b-b-1 p-b-20">Size</h2>
+          <h2 id="size" class="border-b-2 border-b-solid border-gray-200 py-5 font-bold">Size</h2>
           <div class="row p-b-30">
             <div class="col-4">
               <div class="boxes default">
@@ -681,7 +523,7 @@
             </div>
           </div>
           <!-- borders -->
-          <h2 id="borders" class="b-b-1 p-b-20">Borders</h2>
+          <h2 id="borders" class="border-b-2 border-b-solid border-gray-200 py-5 font-bold">Borders</h2>
           <div class="row p-b-30">
             <div class="col-4">
               <div class="boxes default">
@@ -800,7 +642,7 @@
             </div>
           </div>
           <!-- radius -->
-          <h2 id="radius" class="b-b-1 p-b-20">Radius</h2>
+          <h2 id="radius" class="border-b-2 border-b-solid border-gray-200 py-5 font-bold">Radius</h2>
           <div class="row p-b-30">
             <div class="col-4">
               <div class="boxes default">
@@ -1009,7 +851,7 @@
             </div>
           </div>
           <!-- shadow -->
-          <h2 id="shadows" class="b-b-1 p-b-20">Shadows</h2>
+          <h2 id="shadows" class="border-b-2 border-b-solid border-gray-200 py-5 font-bold">Shadows</h2>
           <div class="row p-b-30">
             <div class="col-4">
               <div class="boxes default">
@@ -1037,7 +879,7 @@
             </div>
           </div>
           <!-- alignment -->
-          <h2 id="alignment" class="b-b-1 p-b-20">Alignment</h2>
+          <h2 id="alignment" class="border-b-2 border-b-solid border-gray-200 py-5 font-bold">Alignment</h2>
           <div class="row p-b-30">
             <div class="col-4">
               <div class="boxes default">
@@ -1055,7 +897,7 @@
             </div>
           </div>
           <!-- gutter -->
-          <h2 id="gutters" class="b-b-1 p-b-20">Gutters</h2>
+          <h2 id="gutters" class="border-b-2 border-b-solid border-gray-200 py-5 font-bold">Gutters</h2>
           <div class="row p-b-30">
             <div class="col-4">
               <div class="boxes default">
@@ -1112,7 +954,7 @@
             </div>
           </div>
           <!-- display -->
-          <h2 id="display" class="b-b-1 p-b-20">Display</h2>
+          <h2 id="display" class="border-b-2 border-b-solid border-gray-200 py-5 font-bold">Display</h2>
           <div class="row p-b-30">
             <div class="col-4">
               <div class="boxes default">
@@ -1133,7 +975,7 @@
             </div>
           </div>
           <!-- position -->
-          <h2 id="position" class="b-b-1 p-b-20">Position</h2>
+          <h2 id="position" class="border-b-2 border-b-solid border-gray-200 py-5 font-bold">Position</h2>
           <div class="row p-b-30">
             <div class="col-4">
               <div class="boxes default">
@@ -1157,7 +999,7 @@
             </div>
           </div>
           <!-- flex -->
-          <h2 id="flex" class="b-b-1 p-b-20">Flex</h2>
+          <h2 id="flex" class="border-b-2 border-b-solid border-gray-200 py-5 font-bold">Flex</h2>
           <div class="row p-b-30">
             <div class="col-4">
               <div class="boxes default">
@@ -1292,8 +1134,9 @@
           </div>
         </div>
         <div class="sidebar col-3">
+          <h3 class="font-bold pl-2 text-xl  mt-5">Category</h3>
           <ul>
-            <li v-for="item in menus" class="p-2 border-b border-gray-300">
+            <li v-for="item in menus" class="p-2 border-b border-gray-200">
               <a :href="`#${item.toLowerCase()}`">{{item}}</a>
             </li>
           </ul>
