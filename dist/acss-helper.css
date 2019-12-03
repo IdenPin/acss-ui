@@ -1,411 +1,503 @@
-.bg-transparent {
-  background-color: transparent;
+.border-none {
+  border: none;
 }
 
-.bg-black {
-  background-color: black;
+.border-t-default {
+  border-left-width: 1px;
 }
 
-.bg-white {
-  background-color: white;
+.border-r-default {
+  border-right-width: 1px;
 }
 
-.bg-gray {
-  background-color: gray;
+.border-b-default {
+  border-bottom-width: 1px;
+}
+
+.border-l-default {
+  border-left-width: 1px;
+}
+
+.border-t-0 {
+  border-left-width: 0px;
+}
+
+.border-r-0 {
+  border-right-width: 0px;
+}
+
+.border-b-0 {
+  border-bottom-width: 0px;
+}
+
+.border-l-0 {
+  border-left-width: 0px;
+}
+
+.border-t-2 {
+  border-left-width: 2px;
+}
+
+.border-r-2 {
+  border-right-width: 2px;
+}
+
+.border-b-2 {
+  border-bottom-width: 2px;
+}
+
+.border-l-2 {
+  border-left-width: 2px;
+}
+
+.border-t-4 {
+  border-left-width: 4px;
+}
+
+.border-r-4 {
+  border-right-width: 4px;
+}
+
+.border-b-4 {
+  border-bottom-width: 4px;
+}
+
+.border-l-4 {
+  border-left-width: 4px;
+}
+
+.border-t-8 {
+  border-left-width: 8px;
+}
+
+.border-r-8 {
+  border-right-width: 8px;
+}
+
+.border-b-8 {
+  border-bottom-width: 8px;
+}
+
+.border-l-8 {
+  border-left-width: 8px;
+}
+
+.border-solid {
+  border-style: solid;
+}
+
+.border-dashed {
+  border-style: dashed;
+}
+
+.border-transparent {
+  border-style: transparent;
+}
+
+.border-black {
+  border-style: black;
+}
+
+.border-white {
+  border-style: white;
+}
+
+.border-gray {
+  border-style: gray;
 }
 
 .border-gray-100 {
-  background-color: "#f7fafc";
+  border-style: "#f7fafc";
 }
 
 .border-gray-200 {
-  background-color: "#edf2f7";
+  border-style: "#edf2f7";
 }
 
 .border-gray-300 {
-  background-color: "#e2e8f0";
+  border-style: "#e2e8f0";
 }
 
 .border-gray-400 {
-  background-color: "#cbd5e0";
+  border-style: "#cbd5e0";
 }
 
 .border-gray-500 {
-  background-color: "#a0aec0";
+  border-style: "#a0aec0";
 }
 
 .border-gray-600 {
-  background-color: "#718096";
+  border-style: "#718096";
 }
 
 .border-gray-700 {
-  background-color: "#4a5568";
+  border-style: "#4a5568";
 }
 
 .border-gray-800 {
-  background-color: "#2d3748";
+  border-style: "#2d3748";
 }
 
 .border-gray-900 {
-  background-color: "#1a202c";
+  border-style: "#1a202c";
 }
 
-.bg-red {
-  background-color: red;
+.border-red {
+  border-style: red;
 }
 
 .border-red-100 {
-  background-color: "#fff5f5";
+  border-style: "#fff5f5";
 }
 
 .border-red-200 {
-  background-color: "#fed7d7";
+  border-style: "#fed7d7";
 }
 
 .border-red-300 {
-  background-color: "#feb2b2";
+  border-style: "#feb2b2";
 }
 
 .border-red-400 {
-  background-color: "#fc8181";
+  border-style: "#fc8181";
 }
 
 .border-red-500 {
-  background-color: "#f56565";
+  border-style: "#f56565";
 }
 
 .border-red-600 {
-  background-color: "#e53e3e";
+  border-style: "#e53e3e";
 }
 
 .border-red-700 {
-  background-color: "#c53030";
+  border-style: "#c53030";
 }
 
 .border-red-800 {
-  background-color: "#9b2c2c";
+  border-style: "#9b2c2c";
 }
 
 .border-red-900 {
-  background-color: "#742a2a";
+  border-style: "#742a2a";
 }
 
-.bg-orange {
-  background-color: orange;
+.border-orange {
+  border-style: orange;
 }
 
 .border-orange-100 {
-  background-color: "#fffaf0";
+  border-style: "#fffaf0";
 }
 
 .border-orange-200 {
-  background-color: "#feebc8";
+  border-style: "#feebc8";
 }
 
 .border-orange-300 {
-  background-color: "#fbd38d";
+  border-style: "#fbd38d";
 }
 
 .border-orange-400 {
-  background-color: "#f6ad55";
+  border-style: "#f6ad55";
 }
 
 .border-orange-500 {
-  background-color: "#ed8936";
+  border-style: "#ed8936";
 }
 
 .border-orange-600 {
-  background-color: "#dd6b20";
+  border-style: "#dd6b20";
 }
 
 .border-orange-700 {
-  background-color: "#c05621";
+  border-style: "#c05621";
 }
 
 .border-orange-800 {
-  background-color: "#9c4221";
+  border-style: "#9c4221";
 }
 
 .border-orange-900 {
-  background-color: "#7b341e";
+  border-style: "#7b341e";
 }
 
-.bg-yellow {
-  background-color: yellow;
+.border-yellow {
+  border-style: yellow;
 }
 
 .border-yellow-100 {
-  background-color: "#fffff0";
+  border-style: "#fffff0";
 }
 
 .border-yellow-200 {
-  background-color: "#fefcbf";
+  border-style: "#fefcbf";
 }
 
 .border-yellow-300 {
-  background-color: "#faf089";
+  border-style: "#faf089";
 }
 
 .border-yellow-400 {
-  background-color: "#f6e05e";
+  border-style: "#f6e05e";
 }
 
 .border-yellow-500 {
-  background-color: "#ecc94b";
+  border-style: "#ecc94b";
 }
 
 .border-yellow-600 {
-  background-color: "#d69e2e";
+  border-style: "#d69e2e";
 }
 
 .border-yellow-700 {
-  background-color: "#b7791f";
+  border-style: "#b7791f";
 }
 
 .border-yellow-800 {
-  background-color: "#975a16";
+  border-style: "#975a16";
 }
 
 .border-yellow-900 {
-  background-color: "#744210";
+  border-style: "#744210";
 }
 
-.bg-green {
-  background-color: green;
+.border-green {
+  border-style: green;
 }
 
 .border-green-100 {
-  background-color: "#f0fff4";
+  border-style: "#f0fff4";
 }
 
 .border-green-200 {
-  background-color: "#c6f6d5";
+  border-style: "#c6f6d5";
 }
 
 .border-green-300 {
-  background-color: "#9ae6b4";
+  border-style: "#9ae6b4";
 }
 
 .border-green-400 {
-  background-color: "#68d391";
+  border-style: "#68d391";
 }
 
 .border-green-500 {
-  background-color: "#48bb78";
+  border-style: "#48bb78";
 }
 
 .border-green-600 {
-  background-color: "#38a169";
+  border-style: "#38a169";
 }
 
 .border-green-700 {
-  background-color: "#2f855a";
+  border-style: "#2f855a";
 }
 
 .border-green-800 {
-  background-color: "#276749";
+  border-style: "#276749";
 }
 
 .border-green-900 {
-  background-color: "#22543d";
+  border-style: "#22543d";
 }
 
-.bg-teal {
-  background-color: teal;
+.border-teal {
+  border-style: teal;
 }
 
 .border-teal-100 {
-  background-color: "#e6fffa";
+  border-style: "#e6fffa";
 }
 
 .border-teal-200 {
-  background-color: "#b2f5ea";
+  border-style: "#b2f5ea";
 }
 
 .border-teal-300 {
-  background-color: "#81e6d9";
+  border-style: "#81e6d9";
 }
 
 .border-teal-400 {
-  background-color: "#4fd1c5";
+  border-style: "#4fd1c5";
 }
 
 .border-teal-500 {
-  background-color: "#38b2ac";
+  border-style: "#38b2ac";
 }
 
 .border-teal-600 {
-  background-color: "#319795";
+  border-style: "#319795";
 }
 
 .border-teal-700 {
-  background-color: "#2c7a7b";
+  border-style: "#2c7a7b";
 }
 
 .border-teal-800 {
-  background-color: "#285e61";
+  border-style: "#285e61";
 }
 
 .border-teal-900 {
-  background-color: "#234e52";
+  border-style: "#234e52";
 }
 
-.bg-blue {
-  background-color: blue;
+.border-blue {
+  border-style: blue;
 }
 
 .border-blue-100 {
-  background-color: "#ebf8ff";
+  border-style: "#ebf8ff";
 }
 
 .border-blue-200 {
-  background-color: "#bee3f8";
+  border-style: "#bee3f8";
 }
 
 .border-blue-300 {
-  background-color: "#90cdf4";
+  border-style: "#90cdf4";
 }
 
 .border-blue-400 {
-  background-color: "#63b3ed";
+  border-style: "#63b3ed";
 }
 
 .border-blue-500 {
-  background-color: "#4299e1";
+  border-style: "#4299e1";
 }
 
 .border-blue-600 {
-  background-color: "#3182ce";
+  border-style: "#3182ce";
 }
 
 .border-blue-700 {
-  background-color: "#2b6cb0";
+  border-style: "#2b6cb0";
 }
 
 .border-blue-800 {
-  background-color: "#2c5282";
+  border-style: "#2c5282";
 }
 
 .border-blue-900 {
-  background-color: "#2a4365";
+  border-style: "#2a4365";
 }
 
-.bg-indigo {
-  background-color: indigo;
+.border-indigo {
+  border-style: indigo;
 }
 
 .border-indigo-100 {
-  background-color: "#ebf4ff";
+  border-style: "#ebf4ff";
 }
 
 .border-indigo-200 {
-  background-color: "#c3dafe";
+  border-style: "#c3dafe";
 }
 
 .border-indigo-300 {
-  background-color: "#a3bffa";
+  border-style: "#a3bffa";
 }
 
 .border-indigo-400 {
-  background-color: "#7f9cf5";
+  border-style: "#7f9cf5";
 }
 
 .border-indigo-500 {
-  background-color: "#667eea";
+  border-style: "#667eea";
 }
 
 .border-indigo-600 {
-  background-color: "#5a67d8";
+  border-style: "#5a67d8";
 }
 
 .border-indigo-700 {
-  background-color: "#4c51bf";
+  border-style: "#4c51bf";
 }
 
 .border-indigo-800 {
-  background-color: "#434190";
+  border-style: "#434190";
 }
 
 .border-indigo-900 {
-  background-color: "#3c366b";
+  border-style: "#3c366b";
 }
 
-.bg-purple {
-  background-color: purple;
+.border-purple {
+  border-style: purple;
 }
 
 .border-purple-100 {
-  background-color: "#faf5ff";
+  border-style: "#faf5ff";
 }
 
 .border-purple-200 {
-  background-color: "#e9d8fd";
+  border-style: "#e9d8fd";
 }
 
 .border-purple-300 {
-  background-color: "#d6bcfa";
+  border-style: "#d6bcfa";
 }
 
 .border-purple-400 {
-  background-color: "#b794f4";
+  border-style: "#b794f4";
 }
 
 .border-purple-500 {
-  background-color: "#9f7aea";
+  border-style: "#9f7aea";
 }
 
 .border-purple-600 {
-  background-color: "#805ad5";
+  border-style: "#805ad5";
 }
 
 .border-purple-700 {
-  background-color: "#6b46c1";
+  border-style: "#6b46c1";
 }
 
 .border-purple-800 {
-  background-color: "#553c9a";
+  border-style: "#553c9a";
 }
 
 .border-purple-900 {
-  background-color: "#44337a";
+  border-style: "#44337a";
 }
 
-.bg-pink {
-  background-color: pink;
+.border-pink {
+  border-style: pink;
 }
 
 .border-pink-100 {
-  background-color: "#fff5f7";
+  border-style: "#fff5f7";
 }
 
 .border-pink-200 {
-  background-color: "#fed7e2";
+  border-style: "#fed7e2";
 }
 
 .border-pink-300 {
-  background-color: "#fbb6ce";
+  border-style: "#fbb6ce";
 }
 
 .border-pink-400 {
-  background-color: "#f687b3";
+  border-style: "#f687b3";
 }
 
 .border-pink-500 {
-  background-color: "#ed64a6";
+  border-style: "#ed64a6";
 }
 
 .border-pink-600 {
-  background-color: "#d53f8c";
+  border-style: "#d53f8c";
 }
 
 .border-pink-700 {
-  background-color: "#b83280";
+  border-style: "#b83280";
 }
 
 .border-pink-800 {
-  background-color: "#97266d";
+  border-style: "#97266d";
 }
 
 .border-pink-900 {
-  background-color: "#702459";
+  border-style: "#702459";
 }
