@@ -120,7 +120,7 @@ $colors: (
 
 
 $direction: (
-  t: left,
+  t: top,
   r: right,
   b: bottom,
   l: left
@@ -266,6 +266,13 @@ $width: (
   px: 1px,
   full: 100%,
   screen: 100vh
+);
+
+$align-direction: (
+  l: left,
+  r: right,
+  c: center,
+  j: justify
 );
 
 $height: $width !default;

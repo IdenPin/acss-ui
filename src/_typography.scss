@@ -45,3 +45,10 @@
     height: $val
   }
 }
+
+// text-align
+@each $key, $val in $align-direction {
+  .text-#{$key} {
+    text-align: $val;
+  }
+}
