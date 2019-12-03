@@ -40,7 +40,7 @@
 }
 
 // height
-@each $key, $val in $width {
+@each $key, $val in $height {
   .h-#{$key} {
     height: $val
   }
