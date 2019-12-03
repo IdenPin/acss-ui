@@ -1,0 +1,47 @@
+// font-size
+@each $key, $val in $font-size {
+  .text-#{$key} {
+    font-size: $val;
+  }
+}
+
+// font-weight
+@each $key, $val in $font-weight {
+  .font-#{$key} {
+    font-weight: $val;
+  }
+}
+
+// line-height
+@each $key, $val in $line-height {
+  .line-#{$key} {
+    line-height: $val;
+  }
+}
+
+// color
+@each $colorListKey, $colorListVal in $font-colors {
+  .text-#{$colorListKey}{
+    color: $colorListKey;
+  }
+  @each $colorKey, $colorVal in $colorListVal {
+    .text-#{$colorListKey}-#{$colorKey}{
+      color: $colorVal;
+    }
+  }
+}
+
+
+// width
+@each $key, $val in $width {
+  .w-#{$key} {
+    width: $val
+  }
+}
+
+// height
+@each $key, $val in $width {
+  .h-#{$key} {
+    height: $val
+  }
+}

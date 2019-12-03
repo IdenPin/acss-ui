@@ -3,7 +3,7 @@
     background-color: $colorListKey;
   }
   @each $colorKey, $colorVal in $colorListVal {
-    .border-#{$colorListKey}-#{$colorKey}{
+    .bg-#{$colorListKey}-#{$colorKey}{
       background-color: $colorVal;
     }
   }

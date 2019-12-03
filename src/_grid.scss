@@ -27,7 +27,7 @@
 // breakpoint 768
 @media (min-width: 576px) {
   // looping 12-grids default
-  @include loop-grid-columns(12);
+  @include loop-grid-columns($grid-columns);
   // looping 10-grids
   @include loop-grid-columns(10);
   // equal grid

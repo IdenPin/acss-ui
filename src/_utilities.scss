@@ -9,6 +9,28 @@
   float: left;
 }
 
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.visible {
+  visibility: visible
+}
+
+.hidden {
+  visibility: hidden
+}
+
+
+
+.uppercase {text-transform: uppercase}
+.lowercase {text-transform: lowercase}
+.capitalize {text-transform: capitalize}
+
 .clearfix {
   @include clearfix;
 }

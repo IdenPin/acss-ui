@@ -4,6 +4,9 @@
 .border-none {
   border: none;
 }
+.border {
+ border: 1px solid ;
+}
 
 // border-width
 @each $widthKey, $widthVal in $border-width {
@@ -13,12 +16,19 @@
     } 
   }
 }
+@each $dirKey, $dirVal in $direction {
+  .border-#{$dirKey}{
+    border-#{$dirVal}-width: 1px;
+  } 
+}
 
 
 // border-style
 @each $styleKey, $styleVal in $border-style {
-  .border-#{$styleKey}{
-    border-style: $styleVal;
+  @each $dirKey, $dirVal in $direction {
+    .border-#{$dirKey}-#{$styleKey}{
+      border-#{$dirVal}-style: $styleVal
+    } 
   }
 }
 
@@ -26,11 +36,11 @@
 // border-color
 @each $colorListKey, $colorListVal in $border-color {
   .border-#{$colorListKey}{
-    border-style: $colorListKey;
+    border-color: $colorListKey;
   }
   @each $colorKey, $colorVal in $colorListVal {
     .border-#{$colorListKey}-#{$colorKey}{
-      border-style: $colorVal;
+      border-color: $colorVal;
     }
   }
 }

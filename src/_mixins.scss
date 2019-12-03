@@ -41,7 +41,7 @@
 
 @mixin loop-grid-columns($columns) {
   @for $i from 1 through $columns {
-    @if ($columns==12) {
+    @if ($columns == 12) {
       .col-#{$i} {
         flex: 0 0 percentage($i / $columns);
         max-width: percentage($i / $columns);
