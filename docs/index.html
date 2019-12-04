@@ -38,8 +38,8 @@
               </div>
             </div>
           </div>
-          <!-- margins -->
-          <h2 id="margins" class="border-b-1 border-b-solid border-gray-200 py-5 font-bold">Margins</h2>
+          <!-- Margins -->
+          <h2 id="margin" class="border-b-1 border-b-solid border-gray-200 py-5 font-bold">margin</h2>
           <div class="row pt-5">
             <div class="col-12">
               <div class="flex justify-between items-start">
@@ -60,8 +60,8 @@
               </div>
             </div>
           </div>
-          <!-- paddings -->
-          <h2 id="paddings" class="border-b-1 border-b-solid border-gray-200 py-5 font-bold">Paddings</h2>
+          <!-- Paddings -->
+          <h2 id="padding" class="border-b-1 border-b-solid border-gray-200 py-5 font-bold">padding</h2>
           <div class="row pt-5">
             <div class="col-12 mb-5">
               <div class="flex justify-between items-start">
@@ -85,19 +85,27 @@
             </div>
           </div>
 
-          <!-- Font -->
-          <h2 id="font" class="border-b-1 border-b-solid border-gray-200 py-5 font-bold">Font</h2>
+          <!-- font-size -->
+          <h2 id="font-size" class="border-b-1 border-b-solid border-gray-200 py-5 font-bold">font-size</h2>
           <div class="row pt-5">
             <div class="col-12 mb-5">
-              <div v-for="item in fonts">
-                <div :class="`text-${item}`">
-                  <p>text-{{item}}</p>
-                  <div>和我一起用ACSS搭建页面</div>
-                </div>
+              <div v-for="item in fonts" class="row my-2">
+                <div class="col-2">.text-{{item}}</div>
+                <div :class="`text-${item}`" class="col-10">和我一起用ACSS搭建页面</div>
               </div>
             </div>
           </div>
 
+          <!-- font-weight -->
+          <h2 id="font-weight" class="border-b-1 border-b-solid border-gray-200 py-5 font-bold">font-weight</h2>
+          <div class="row pt-5">
+            <div class="col-12 mb-5">
+              <div v-for="item in text" class="row my-2">
+                <div class="col-4">.font-{{item}}</div>
+                <div class="col-8" :class="`font-${item}`">和我一起用ACSS搭建页面</div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="sidebar col-3">
           <h3 class="font-bold pl-2 text-2xl mt-5">Category</h3>
@@ -117,20 +125,20 @@
     el: '#app',
     data: {
       menus: [
-        'Colors',
-        'Margins',
-        'Paddings',
-        'Font',
-        'Text',
-        'Size',
-        'Borders',
-        'Radius',
-        'Shadows',
-        'Alignment',
-        'Gutters',
-        'Display',
-        'Position',
-        'Flex'
+        'color',
+        'margin',
+        'padding',
+        'font-size',
+        'font-weight',
+        'size',
+        'border',
+        'radius',
+        'shadows',
+        'alignment',
+        'gutter',
+        'display',
+        'position',
+        'flex'
       ],
       colors: {
         gray: {
@@ -246,7 +254,8 @@
       },
       paddings: ['pt-8', 'pr-8', 'pb-8', 'pl-8', 'px-8', 'py-8'],
       margins: ['mt-8', 'mr-8', 'mb-8', 'ml-8', 'mx-8', 'my-8'],
-      fonts: ['xs', 'sm', 'base', 'lg', 'xl', '2xl', '3xl', '4xl', '5xl', '6xl']
+      fonts: ['xs', 'sm', 'base', 'lg', 'xl', '2xl', '3xl', '4xl', '5xl', '6xl'],
+      text: ["hairline", "thin", "light", "normal", "medium", "semibold", "bold", "extrabold", "black"]
     }
   })
 </script>
