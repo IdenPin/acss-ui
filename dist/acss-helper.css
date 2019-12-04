@@ -41,6 +41,11 @@ html {
   /* 1 */
   line-height: 1.5;
   /* 2 */
+  margin: 0;
+}
+
+body {
+  margin: 0;
 }
 
 *,
@@ -2666,27 +2671,27 @@ video {
 }
 
 .text-xl {
-  font-size: 4rem;
+  font-size: 1.25rem;
 }
 
 .text-2xl {
-  font-size: 3rem;
-}
-
-.text-3xl {
-  font-size: 2.25rem;
-}
-
-.text-4xl {
-  font-size: 1.875rem;
-}
-
-.text-5xl {
   font-size: 1.5rem;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+}
+
 .text-6xl {
-  font-size: 1.25rem;
+  font-size: 4rem;
 }
 
 .font-hairline {

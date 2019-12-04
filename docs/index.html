@@ -85,9 +85,22 @@
             </div>
           </div>
 
+          <!-- Font -->
+          <h2 id="font" class="border-b-1 border-b-solid border-gray-200 py-5 font-bold">Font</h2>
+          <div class="row pt-5">
+            <div class="col-12 mb-5">
+              <div v-for="item in fonts">
+                <div :class="`text-${item}`">
+                  <p>text-{{item}}</p>
+                  <div>和我一起用ACSS搭建页面</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
         <div class="sidebar col-3">
-          <h3 class="font-bold pl-2 text-xl  mt-5">Category</h3>
+          <h3 class="font-bold pl-2 text-2xl mt-5">Category</h3>
           <ul>
             <li v-for="item in menus" class="p-2 border-b border-gray-200">
               <a :href="`#${item.toLowerCase()}`">{{item}}</a>
@@ -232,7 +245,8 @@
         }
       },
       paddings: ['pt-8', 'pr-8', 'pb-8', 'pl-8', 'px-8', 'py-8'],
-      margins: ['mt-8', 'mr-8', 'mb-8', 'ml-8', 'mx-8', 'my-8']
+      margins: ['mt-8', 'mr-8', 'mb-8', 'ml-8', 'mx-8', 'my-8'],
+      fonts: ['xs', 'sm', 'base', 'lg', 'xl', '2xl', '3xl', '4xl', '5xl', '6xl']
     }
   })
 </script>

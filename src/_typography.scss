@@ -19,7 +19,7 @@
   }
 }
 
-// color
+// font - color
 @each $colorListKey, $colorListVal in $font-colors {
   .text-#{$colorListKey}{
     color: $colorListKey;
