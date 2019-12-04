@@ -1,0 +1,7 @@
+@each $key, $val in $border-radius {
+  .rounded-#{$key}{
+    border-radius: unquote($val);
+  }
+}
+
+

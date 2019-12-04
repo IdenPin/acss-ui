@@ -27,299 +27,64 @@
     <main class="container">
       <div class="row">
         <div class="col-9">
-          <h2 class="border-b-1 border-b-solid border-gray-300 pb-4 mt-5 font-bold">Colors</h2>
+          <h2 class="border-b-1 border-b-solid border-gray-200 pb-4 mt-5 font-bold">Colors</h2>
           <div class="row p-b-30">
-            <div class="col-3 mt-5" v-for="(color, index) in colors" :key="index">
-              <div class="p-2 text-c text-sm" :class="`text-${index}-${i == 500 ? '' : 1000 - i} bg-${index}-${i}`"
-                v-for="(item, i) in color">
-                {{index.toLocaleUpperCase()}} {{i}}
-              </div>
-            </div>
-          </div>
-          <!-- paddings -->
-          <h2 id="paddings" class="border-b-2 border-b-solid border-gray-200 py-5 font-bold">Paddings</h2>
-          <div class="row p-b-30">
-            <div class="col-4">
-              <div class="boxes default">
-                <div class="box heading">padding</div>
-                <div class="box">
-                  <code>.p-0</code>
-                </div>
-                <div class="box">
-                  <code>.p-5</code>
-                </div>
-                <div class="box">
-                  <code>.p-10</code>
-                </div>
-                <div class="box">
-                  <code>.p-15</code>
-                </div>
-                <div class="box">
-                  <code>.p-20</code>
-                </div>
-                <div class="box">
-                  <code>.p-25</code>
-                </div>
-                <div class="box">
-                  <code>.p-30</code>
-                </div>
-                <div class="box">
-                  <code>.p-35</code>
-                </div>
-                <div class="box">
-                  <code>.p-40</code>
-                </div>
-                <div class="box">
-                  <code>.p-45</code>
-                </div>
-                <div class="box">
-                  <code>.p-50</code>
+            <div class="col-3 mt-5 overflow-hidden" v-for="(color, index) in colors" :key="index">
+              <div class="rounded-default overflow-hidden">
+                <div class="p-2 text-c text-sm" :class="`text-${index}-${i == 500 ? '' : 1000 - i} bg-${index}-${i}`"
+                  v-for="(item, i) in color">
+                  {{index.toLocaleUpperCase()}} {{i}}
                 </div>
               </div>
             </div>
           </div>
           <!-- margins -->
-          <h2 id="margins" class="border-b-2 border-b-solid border-gray-200 py-5 font-bold">Margins</h2>
-          <div class="row p-b-30">
-            <div class="col-4">
-              <div class="boxes default">
-                <div class="box heading">margin</div>
-                <div class="box">
-                  <code>.m-0</code>
+          <h2 id="margins" class="border-b-1 border-b-solid border-gray-200 py-5 font-bold">Margins</h2>
+          <div class="row pt-5">
+            <div class="col-12">
+              <div class="flex justify-between items-start">
+                <div class="bg-gray-200" v-for="item in margins">
+                  <div class="bg-white">{{item}}</div>
+                  <div class="bg-gray-200" :class="item">
+                    <div class="bg-yellow-200">Target</div>
+                  </div>
                 </div>
-                <div class="box">
-                  <code>.m-5</code>
-                </div>
-                <div class="box">
-                  <code>.m-10</code>
-                </div>
-                <div class="box">
-                  <code>.m-15</code>
-                </div>
-                <div class="box">
-                  <code>.m-20</code>
-                </div>
-                <div class="box">
-                  <code>.m-25</code>
-                </div>
-                <div class="box">
-                  <code>.m-30</code>
-                </div>
-                <div class="box">
-                  <code>.m-35</code>
-                </div>
-                <div class="box">
-                  <code>.m-40</code>
-                </div>
-                <div class="box">
-                  <code>.m-45</code>
-                </div>
-                <div class="box">
-                  <code>.m-50</code>
-                </div>
-              </div>
-            </div>
-            <div class="col-4">
-              <div class="boxes default">
-                <div class="box heading">margin-top</div>
-                <div class="box">
-                  <code>.m-t-0</code>
-                </div>
-                <div class="box">
-                  <code>.m-t-5</code>
-                  <code>.m-t--5</code>
-                </div>
-                <div class="box">
-                  <code>.m-t-10</code>
-                  <code>.m-t--10</code>
-                </div>
-                <div class="box">
-                  <code>.m-t-15</code>
-                  <code>.m-t--15</code>
-                </div>
-                <div class="box">
-                  <code>.m-t-20</code>
-                  <code>.m-t--20</code>
-                </div>
-                <div class="box">
-                  <code>.m-t-25</code>
-                  <code>.m-t--25</code>
-                </div>
-                <div class="box">
-                  <code>.m-t-30</code>
-                  <code>.m-t--30</code>
-                </div>
-                <div class="box">
-                  <code>.m-t-35</code>
-                  <code>.m-t--35</code>
-                </div>
-                <div class="box">
-                  <code>.m-t-40</code>
-                  <code>.m-t--40</code>
-                </div>
-                <div class="box">
-                  <code>.m-t-45</code>
-                  <code>.m-t--45</code>
-                </div>
-                <div class="box">
-                  <code>.m-t-50</code>
-                  <code>.m-t--50</code>
-                </div>
-              </div>
-            </div>
-            <div class="col-4">
-              <div class="boxes default">
-                <div class="box heading">margin-bottom</div>
-                <div class="box">
-                  <code>.m-b-0</code>
-                </div>
-                <div class="box">
-                  <code>.m-b-5</code>
-                  <code>.m-b--5</code>
-                </div>
-                <div class="box">
-                  <code>.m-b-10</code>
-                  <code>.m-b--10</code>
-                </div>
-                <div class="box">
-                  <code>.m-b-15</code>
-                  <code>.m-b--15</code>
-                </div>
-                <div class="box">
-                  <code>.m-b-20</code>
-                  <code>.m-b--20</code>
-                </div>
-                <div class="box">
-                  <code>.m-b-25</code>
-                  <code>.m-b--25</code>
-                </div>
-                <div class="box">
-                  <code>.m-b-30</code>
-                  <code>.m-b--30</code>
-                </div>
-                <div class="box">
-                  <code>.m-b-35</code>
-                  <code>.m-b--35</code>
-                </div>
-                <div class="box">
-                  <code>.m-b-40</code>
-                  <code>.m-b--40</code>
-                </div>
-                <div class="box">
-                  <code>.m-b-45</code>
-                  <code>.m-b--45</code>
-                </div>
-                <div class="box">
-                  <code>.m-b-50</code>
-                  <code>.m-b--50</code>
-                </div>
-              </div>
-            </div>
-            <div class="col-4">
-              <div class="boxes default">
-                <div class="box heading">margin-left</div>
-                <div class="box">
-                  <code>.m-l-0</code>
-                </div>
-                <div class="box">
-                  <code>.m-l-5</code>
-                  <code>.m-l--5</code>
-                </div>
-                <div class="box">
-                  <code>.m-l-10</code>
-                  <code>.m-l--10</code>
-                </div>
-                <div class="box">
-                  <code>.m-l-15</code>
-                  <code>.m-l--15</code>
-                </div>
-                <div class="box">
-                  <code>.m-l-20</code>
-                  <code>.m-l--20</code>
-                </div>
-                <div class="box">
-                  <code>.m-l-25</code>
-                  <code>.m-l--25</code>
-                </div>
-                <div class="box">
-                  <code>.m-l-30</code>
-                  <code>.m-l--30</code>
-                </div>
-                <div class="box">
-                  <code>.m-l-35</code>
-                  <code>.m-l--35</code>
-                </div>
-                <div class="box">
-                  <code>.m-l-40</code>
-                  <code>.m-l--40</code>
-                </div>
-                <div class="box">
-                  <code>.m-l-45</code>
-                  <code>.m-l--45</code>
-                </div>
-                <div class="box">
-                  <code>.m-l-50</code>
-                  <code>.m-l--50</code>
-                </div>
-              </div>
-            </div>
-            <div class="col-4">
-              <div class="boxes default">
-                <div class="box heading">margin-right</div>
-                <div class="box">
-                  <code>.m-r-0</code>
-                </div>
-                <div class="box">
-                  <code>.m-r-5</code>
-                  <code>.m-r--5</code>
-                </div>
-                <div class="box">
-                  <code>.m-r-10</code>
-                  <code>.m-r--10</code>
-                </div>
-                <div class="box">
-                  <code>.m-r-15</code>
-                  <code>.m-r--15</code>
-                </div>
-                <div class="box">
-                  <code>.m-r-20</code>
-                  <code>.m-r--20</code>
-                </div>
-                <div class="box">
-                  <code>.m-r-25</code>
-                  <code>.m-r--25</code>
-                </div>
-                <div class="box">
-                  <code>.m-r-30</code>
-                  <code>.m-r--30</code>
-                </div>
-                <div class="box">
-                  <code>.m-r-35</code>
-                  <code>.m-r--35</code>
-                </div>
-                <div class="box">
-                  <code>.m-r-40</code>
-                  <code>.m-r--40</code>
-                </div>
-                <div class="box">
-                  <code>.m-r-45</code>
-                  <code>.m-r--45</code>
-                </div>
-                <div class="box">
-                  <code>.m-r-50</code>
-                  <code>.m-r--50</code>
-                </div>
-              </div>
-            </div>
-            <div class="col-4">
-              <div class="boxes default">
-                <div class="box heading">margin-auto</div>
-                <div class="box">
-                  <code>.m-auto</code>
+                <div class="bg-gray-200">
+                  <div class="bg-white">-mt-4</div>
+                  <div class="my-8">
+                    <div class="-mt-4">
+                      <div class="bg-yellow-200">Target</div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+          <!-- paddings -->
+          <h2 id="paddings" class="border-b-1 border-b-solid border-gray-200 py-5 font-bold">Paddings</h2>
+          <div class="row pt-5">
+            <div class="col-12 mb-5">
+              <div class="flex justify-between items-start">
+                <div v-for="i in 6">
+                  <p class="text-center text-sm text-gray-600 mb-1 ">pt-{{i}}</p>
+                  <div class="bg-gray-200 border border-dashed border-yellow-500" :class="`pt-${i}`">
+                    <div class="bg-yellow-200">Target</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="flex justify-between items-start">
+                <div v-for="item in paddings">
+                  <p class="text-center text-sm text-gray-600 mb-1">{{item}}</p>
+                  <div class="bg-gray-200 border border-dashed border-yellow-500" :class="item">
+                    Target
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
         <div class="sidebar col-3">
           <h3 class="font-bold pl-2 text-xl  mt-5">Category</h3>
@@ -340,8 +105,8 @@
     data: {
       menus: [
         'Colors',
-        'Paddings',
         'Margins',
+        'Paddings',
         'Font',
         'Text',
         'Size',
@@ -465,7 +230,9 @@
           800: '#97266d',
           900: '#702459',
         }
-      }
+      },
+      paddings: ['pt-8', 'pr-8', 'pb-8', 'pl-8', 'px-8', 'py-8'],
+      margins: ['mt-8', 'mr-8', 'mb-8', 'ml-8', 'mx-8', 'my-8']
     }
   })
 </script>
