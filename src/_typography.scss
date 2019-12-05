@@ -32,20 +32,6 @@
 }
 
 
-// width
-@each $key, $val in $width {
-  .w-#{$key} {
-    width: $val
-  }
-}
-
-// height
-@each $key, $val in $height {
-  .h-#{$key} {
-    height: $val
-  }
-}
-
 // text-align
 @each $key, $val in $align-direction {
   .text-#{$key} {

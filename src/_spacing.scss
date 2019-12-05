@@ -1,10 +1,13 @@
 // --------------------------------------------------
 // margin & padding
 // --------------------------------------------------
+.mx-auto{
+  margin-left:  auto;
+  margin-right:  auto;
+}
 
 // .m-10 -> margin: 10px;
 // .m--10-> margin: -10px;
-$true: true;
 @each $typeKey, $typeVal in $spacing-types {
   @each $sizeKey, $sizeVal in $spacing-sizes {
     @if $typeKey == m{

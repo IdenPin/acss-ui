@@ -145,6 +145,22 @@
               </div>
             </div>
           </div>
+          <!-- border-radius -->
+          <h2 id="border-radius" class="border-b-1 border-b-solid border-gray-200 py-5 font-bold">border-radius</h2>
+          <div class="row my-5 justify-between">
+            <div class="col-2 text-c" v-for="item in borderRadius">
+              <div class="w-16 h-16 border mx-auto" :class="`rounded-${item}`">{{item}}</div>
+              <p class="my-5">.rounded-{{item}}</p>
+            </div>
+          </div>
+          <!-- box-shadow -->
+          <h2 id="border-radius" class="border-b-1 border-b-solid border-gray-200 py-5 font-bold">box-shadow</h2>
+          <div class="row my-5">
+            <div class="col-3 text-c" v-for="item in boxShadow">
+              <div class="w-16 h-16 mx-auto" :class="`shadow-${item}`"></div>
+              <p class="my-5">.shadow-{{item}}</p>
+            </div>
+          </div>
         </div>
         <div class="sidebar col-3">
           <div>
@@ -172,8 +188,8 @@
         'font-size',
         'font-weight',
         'border',
-        'radius',
-        'shadows',
+        'border-radius',
+        'box-shadow',
         'alignment',
         'gutter',
         'display',
@@ -301,7 +317,9 @@
         borderStyle: ['solid', 'dashed', 'dotted', 'double', 'none'],
         borderDirection: ['t', 'r', 'b', 'l'],
         borderColor: ['pink-500', 'purple-500', 'indigo-500', 'blue-500', 'yellow-500', 'orange-500']
-      }
+      },
+      borderRadius: ["none", "sm", "default", "lg", "full"],
+      boxShadow: ['default', 'md', 'lg', 'xl', '2xl', 'inner', 'outline', 'none']
     }
   })
 </script>
