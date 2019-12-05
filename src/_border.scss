@@ -5,7 +5,7 @@
   border: none;
 }
 .border {
- border: 1px solid ;
+ border: 1px solid;
 }
 
 
@@ -13,6 +13,9 @@
 // border-width
 @each $widthKey, $widthVal in $border-width {
   @each $dirKey, $dirVal in $direction {
+    .border-width-#{$widthKey}{
+      border-width: ($widthVal * 1px);
+    } 
     .border-#{$dirKey}-#{$widthKey}{
       border-#{$dirVal}-width: ($widthVal * 1px);
     } 

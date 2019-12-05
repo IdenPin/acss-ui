@@ -300,80 +300,160 @@ video {
   border: 1px solid;
 }
 
+.border-width-0 {
+  border-width: 0px;
+}
+
 .border-t-0 {
   border-top-width: 0px;
+}
+
+.border-width-0 {
+  border-width: 0px;
 }
 
 .border-r-0 {
   border-right-width: 0px;
 }
 
+.border-width-0 {
+  border-width: 0px;
+}
+
 .border-b-0 {
   border-bottom-width: 0px;
+}
+
+.border-width-0 {
+  border-width: 0px;
 }
 
 .border-l-0 {
   border-left-width: 0px;
 }
 
+.border-width-1 {
+  border-width: 1px;
+}
+
 .border-t-1 {
   border-top-width: 1px;
+}
+
+.border-width-1 {
+  border-width: 1px;
 }
 
 .border-r-1 {
   border-right-width: 1px;
 }
 
+.border-width-1 {
+  border-width: 1px;
+}
+
 .border-b-1 {
   border-bottom-width: 1px;
+}
+
+.border-width-1 {
+  border-width: 1px;
 }
 
 .border-l-1 {
   border-left-width: 1px;
 }
 
+.border-width-2 {
+  border-width: 2px;
+}
+
 .border-t-2 {
   border-top-width: 2px;
+}
+
+.border-width-2 {
+  border-width: 2px;
 }
 
 .border-r-2 {
   border-right-width: 2px;
 }
 
+.border-width-2 {
+  border-width: 2px;
+}
+
 .border-b-2 {
   border-bottom-width: 2px;
+}
+
+.border-width-2 {
+  border-width: 2px;
 }
 
 .border-l-2 {
   border-left-width: 2px;
 }
 
+.border-width-4 {
+  border-width: 4px;
+}
+
 .border-t-4 {
   border-top-width: 4px;
+}
+
+.border-width-4 {
+  border-width: 4px;
 }
 
 .border-r-4 {
   border-right-width: 4px;
 }
 
+.border-width-4 {
+  border-width: 4px;
+}
+
 .border-b-4 {
   border-bottom-width: 4px;
+}
+
+.border-width-4 {
+  border-width: 4px;
 }
 
 .border-l-4 {
   border-left-width: 4px;
 }
 
+.border-width-8 {
+  border-width: 8px;
+}
+
 .border-t-8 {
   border-top-width: 8px;
+}
+
+.border-width-8 {
+  border-width: 8px;
 }
 
 .border-r-8 {
   border-right-width: 8px;
 }
 
+.border-width-8 {
+  border-width: 8px;
+}
+
 .border-b-8 {
   border-bottom-width: 8px;
+}
+
+.border-width-8 {
+  border-width: 8px;
 }
 
 .border-l-8 {
@@ -474,6 +554,26 @@ video {
 
 .border-l-double {
   border-left-style: double;
+}
+
+.border-none {
+  border-style: none;
+}
+
+.border-t-none {
+  border-top-style: none;
+}
+
+.border-r-none {
+  border-right-style: none;
+}
+
+.border-b-none {
+  border-bottom-style: none;
+}
+
+.border-l-none {
+  border-left-style: none;
 }
 
 .border-transparent {

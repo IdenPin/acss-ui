@@ -115,10 +115,33 @@
           <!-- font-weight -->
           <h2 id="font-weight" class="border-b-1 border-b-solid border-gray-200 py-5 font-bold">font-weight</h2>
           <div class="row pt-5">
-            <div class="col-12 mb-5">
+            <div class="col-12">
               <div v-for="item in fontWeight" class="row my-2">
                 <div class="col-4">.font-{{item}}</div>
                 <div class="col-8" :class="`font-${item}`">和我一起用ACSS搭建页面</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- border -->
+          <h2 id="border" class="border-b-1 border-b-solid border-gray-200 py-5 font-bold">border</h2>
+          <div class="row my-5">
+            <div class="col-4">
+              <p class="mb-5">border-width</p>
+              <div class="border-b-1 py-2" v-for="item in border.borderWidth" :class="`border-${item}`">
+                .border-{{item}}
+              </div>
+            </div>
+            <div class="col-4">
+              <p class="mb-5">border-style</p>
+              <div class="border-b-1 py-2" v-for="item in border.borderStyle" :class="`border-${item}`">
+                border-{{item}}
+              </div>
+            </div>
+            <div class="col-4">
+              <p class="mb-5">border-color</p>
+              <div class="border-b-1 py-2" v-for="item in border.borderColor" :class="`border-${item}`">
+                .border-{{item}}
               </div>
             </div>
           </div>
@@ -148,7 +171,6 @@
         'padding',
         'font-size',
         'font-weight',
-        'size',
         'border',
         'radius',
         'shadows',
@@ -273,7 +295,13 @@
       paddings: ['pt-8', 'pr-8', 'pb-8', 'pl-8', 'px-8', 'py-8'],
       margins: ['mt-8', 'mr-8', 'mb-8', 'ml-8', 'mx-8', 'my-8'],
       fontSize: ['xs', 'sm', 'base', 'lg', 'xl', '2xl', '3xl', '4xl', '5xl', '6xl'],
-      fontWeight: ["hairline", "thin", "light", "normal", "medium", "semibold", "bold", "extrabold", "black"]
+      fontWeight: ["hairline", "thin", "light", "normal", "medium", "semibold", "bold", "extrabold", "black"],
+      border: {
+        borderWidth: ['b-0', 'b-1', 'b-2', 'b-4', 'b-8'],
+        borderStyle: ['solid', 'dashed', 'dotted', 'double', 'none'],
+        borderDirection: ['t', 'r', 'b', 'l'],
+        borderColor: ['pink-500', 'purple-500', 'indigo-500', 'blue-500', 'yellow-500', 'orange-500']
+      }
     }
   })
 </script>
